@@ -22,19 +22,50 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4" style="margin-top: 20px; text-align:center;">
+            <div class="col-md-2" style="margin-top: 20px; text-align:center;">
                 <div class="dentro laranja" style="padding-top: 5px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
                     <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
                     <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
                 </svg>
                 <h2>
-                    Sua meta diária:
+                    <label for="inputPagouLata">
+                        Quanto pagou na lata:
+                    </label>
+                    <input id="inputPagouLata" type="number" />
+                </h2>
+                </div>
+            </div>
+            <div class="col-md-2" style="margin-top: 20px; text-align:center;">
+                <div class="dentro laranja" style="padding-top: 5px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                    <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                    <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+                </svg>
+                <h2>
+                    <label for="inputEstoque">
+                        Qual seu estoque de hoje:
+                    </label>
+                    <input id="inputEstoque" type="number" />
+                </h2>
+                </div>
+            </div>
+            <div class="col-md-2" style="margin-top: 20px; text-align:center;">
+                <div class="dentro laranja" style="padding-top: 5px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                    <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                    <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+                </svg>
+                <h2>
+                    <label for="inputMeta">
+                        Qual sua meta diária:
+                    </label>
+                    <input id="inputMeta" type="number" />
                 </h2>
                 <p> R$50,00/R$200,00</p>
                 </div>
             </div>
-            <div class="col-md-4" style="margin-top: 20px; text-align:center;">
+            <div class="col-md-2" style="margin-top: 20px; text-align:center;">
                 <div class="dentro laranja">
                     <div class="ico2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
@@ -47,7 +78,19 @@
                 <p style="font-weight: bolder; font-size: larger;"> 6</p>
                 </div>
             </div>
-            <div class="col-md-4" style="margin-top: 20px; text-align:center;">
+            <div class="col-md-2" style="margin-top: 20px; text-align:center;">
+                <div class="dentro laranja" style="padding-top: 5px;">
+                    
+                <h2>
+                    <label for="inputResultado">
+                        Para atingir esse lucro com este estoque:
+                    </label>
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <input id="inputResultado" type="number" readonly />
+                </h2>
+                </div>
+            </div>
+            <div class="col-md-2" style="margin-top: 20px; text-align:center;">
                 <div class="dentro laranja" >
                 <div class="ico2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-trophy-fill" viewBox="0 0 16 16">
@@ -62,5 +105,38 @@
             </div>
         </div>
     </div>
+    <script>
+        function calcular() {
+            let inputPagouLata = document.getElementById("inputPagouLata");
+            let inputEstoque = document.getElementById("inputEstoque");
+            let inputMeta = document.getElementById("inputMeta");
+        
+            let pglata = parseInt(inputPagouLata.value);
+            let estoque = parseInt(inputEstoque.value);
+            let meta = parseInt(inputMeta.value);
+
+            if (isNaN(pglata) || pglata < 0) {
+                alert("O valor pago pela lata é inválido.");
+                return;
+            }
+        
+            if (isNaN(estoque) || estoque < 0) {
+                alert("O estoque é inválido.");
+                return;
+            }
+        
+            if (isNaN(meta) || meta < 0) {
+                alert("A meta diária é inválida.");
+                return;
+            }
+        
+            let despesas = pglata * estoque + meta;
+            let preco = despesas / estoque;
+        
+            document.getElementById("inputResultado").value = preco.toFixed(2);
+        }
+        
+    </script>
+
 </body>
 </html>
