@@ -49,3 +49,53 @@ body{
 .usu{
     margin: 40px 5px auto 40px;
 }
+img {
+    max-width: 100%;
+}
+
+.fundo-evento-h1{
+    background-color: #3466ff;
+}
+.fundo-pag-4{
+    background-color: #1e3c8e;
+    padding-top: 20px;
+}
+.text-pag-4{
+  color: #ffffff;
+}
+.baixin{
+  font-size: 22px;
+}
+.p-text-4{
+  color: whitesmoke;
+}
+.tam-pag-4{
+  max-width: 400px;
+}
+.fundo-pad-5{
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: -10px;
+}
+.fundo-pad-6{
+    margin-bottom: -10px;
+    margin-left: 30px;
+}
+.cor-hr{
+    color: #ffffff;
+}
+
+.calen{
+    position: fixed;
+}
+.img-calen{
+    width: 130px
+}
+.fundo-pad-1{
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.logo{
+    max-width: 200px;
+}
