@@ -41,14 +41,12 @@ body{
     background-color: #1b25ae;
     border-radius: 7px;
     padding: 5px 10px;
+    text-decoration: none;
 }
 .icon{
     align-content: center;
 }
 
-.usu{
-    margin: 40px 5px auto 40px;
-}
 img {
     max-width: 100%;
 }
@@ -61,21 +59,21 @@ img {
     padding-top: 20px;
 }
 .text-pag-4{
-  color: #ffffff;
+    color: #ffffff;
 }
 .baixin{
-  font-size: 22px;
+    font-size: 22px;
 }
 .p-text-4{
-  color: whitesmoke;
+    color: whitesmoke;
 }
 .tam-pag-4{
-  max-width: 400px;
+    max-width: 400px;
 }
 .fundo-pad-5{
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-top: -10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: -10px;
 }
 .fundo-pad-6{
     margin-bottom: -10px;
@@ -98,4 +96,8 @@ img {
 
 .logo{
     max-width: 200px;
+}
+
+.diff{
+    margin-right: 200px;
 }
