@@ -32,6 +32,10 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+.azul{
+    color:#1e3c8e;
+    background-color: #1e3c8e;
+}
 
 .alinha-nav{
     margin-top: 24px;
@@ -58,7 +62,7 @@ img {
 }
 .fundo-pag-4{
     background-color: #1e3c8e;
-    padding-top: 20px;
+    padding-top: 20px;  
 }
 .text-pag-4{
   color: #ffffff;
@@ -93,9 +97,32 @@ img {
 }
 .fundo-pad-1{
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    margin-top: 10px ;
+}
+
+.a-calen{
+    text-decoration: none;
+    color: #f84300;
 }
 
 .logo{
     max-width: 200px;
+}
+.div-dia{
+    background-color: gray;
+    max-width: 200px;
+    border-radius: 15px;
+}
+.center{
+    text-align: center;
+}
+.fundo-dia{
+    margin-bottom: 30px;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.b-calen{
+    text-decoration: none;
+    color: greenyellow;
 }
