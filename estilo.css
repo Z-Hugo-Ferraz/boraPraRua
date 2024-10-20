@@ -131,6 +131,7 @@ img {
 .ico2{
     padding-top: 15px;
     padding-bottom: 15px;
+    
 }
 .espaco2{
     margin-bottom: 5px;
@@ -156,6 +157,7 @@ img {
 .ico2-bora{
     padding-top: 15px;
     padding-bottom: 15px;
+    min-width: 300px;
 }
 .bora{
     width: 180px;
@@ -172,4 +174,8 @@ img {
     padding-top: 15px;
     padding-bottom: 15px;
 
+}
+
+.bbb{
+    font-weight: bold;
 }
