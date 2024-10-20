@@ -132,3 +132,20 @@ img {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.espaco2{
+    margin-bottom: 5px;
+}
+.calc{
+    border-radius: 20px;
+    color: #f84300;
+    padding: 7px;
+    background: none;
+    border-color: #3466ff;
+    font-size: large;
+    border-style: groove;
+    border-width: 2px;
+}
+.bora{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
